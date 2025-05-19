@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+
+<style>
+    .foot {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        background: #333;
+        padding: 15px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    .footer-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+    .footer-icon i {
+        font-size: 22px;
+    }
+    .footer-icon:hover {
+        color: #4CAF50;
+    }
+    #f {
+        margin-top: 5px;
+        font-size: 14px;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        .foot {
+            flex-wrap: wrap;
+        }
+        .footer-icon {
+            flex: 1;
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .foot {
+            flex-direction: column;
+        }
+        .footer-icon {
+            width: 100%;
+            padding: 10px 0;
+        }
+    }
+</style>
+</head>
+<body>
+<footer class="foot">
+    <a href="index.html" class="footer-icon"><i class="fa-solid fa-house"></i><span id="f">Home</span></a>
+    <a href="crop_care.html" class="footer-icon"><i class="fa-solid fa-seedling"></i><span id="f">Crop Care</span></a>
+    <a href="#" class="footer-icon"><i class="fa-solid fa-store"></i><span id="f">Market View</span></a>
+    <a href="#" class="footer-icon"><i class="fa-solid fa-link"></i><span id="f">Connect</span></a>
+    <a href="#" class="footer-icon"><i class="fa-solid fa-users"></i><span id="f">Community</span></a>
+    <a href="#" class="footer-icon"><i class="fa-solid fa-user"></i><span id="f">Profile</span></a>
+    <a href="#" class="footer-icon"><i class="fa-solid fa-bell"></i><span id="f">Notification</span></a>
+</footer>
+</body>
+</html>

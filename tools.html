@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture Tools</title>
+
+                                     <!-- bootstrap link-->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+                                     <!--Fontawesome link-->
+
+  <script src="https://kit.fontawesome.com/ac6870aa6c.js" crossorigin="anonymous"></script>
+
+                                     <!--css link -->
+
+  <link rel="stylesheet" href="css.css">
+
+
+
+    <style>
+        #aa {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            background: linear-gradient(to right, #3E8E41, #1E5631);
+            color: white;
+        }
+        #bb {
+            max-width: 1200px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            color: black;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        #cc{
+            font-size: 34px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        #dd {
+            font-size: 26px;
+            color: #3E8E41;
+        }
+        #ee img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        #ee img:hover {
+            transform: scale(1.05);
+        }
+        #ff {
+            padding: 15px;
+            background: #f4f4f4;
+            border-radius: 10px;
+            transition: background 0.3s ease-in-out;
+        }
+        #ff:hover {
+            background: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+
+                                 <!-- navbar-->
+    
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <!-- <h1>🌱</h1> -->
+          <i id="b" class="fa-solid fa-seedling"></i> 
+          <!-- <img id="e" src="KRISHAK.jpg" alt=""> -->
+          <h1 id="g">KRISHAK</h1> 
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <h1>Menu <span class="navbar-toggler-icon"></span></h1>                      
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">KRISHAK</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+          aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"><span><i class="fa-solid fa-house-user"></i>  Home</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#"><span><i class="fa-solid fa-user"></i></span>  My Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#"><i class="fa-solid fa-phone-volume"></i> Talk to Expert</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#"><i class="fa-solid fa-language"></i> Select Language</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#"><i class="fa-solid fa-chart-line"></i> Terms of Use</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#"><i class="fa-solid fa-share-nodes"></i> Share and Earn</a>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav><br><br><br><br>
+
+    <div id="aa">
+    <div id="bb" class="container">
+        <h1 id="cc">Essential Agriculture Tools</h1>
+
+        <div class="section">
+            <h2 id="dd">Mechanized Farming Equipment</h2>
+            <div id="ee" class="image">
+                <img src="tools.jpg" alt="Tractor & Plow">
+            </div>
+            <div id="ff" class="text">
+                <p>Modern tractors, plows, and seed drills increase efficiency in land preparation, planting, and tilling.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 id="dd">Irrigation Systems</h2>
+            <div id="ee" class="image">
+                <img src="tools1.jpg" alt="Drip Irrigation">
+            </div>
+            <div id="ff" class="text">
+                <p>Drip irrigation systems deliver water directly to plant roots, reducing water waste and maximizing growth.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 id="dd">Pest Control Devices</h2>
+            <div id="ee" class="image">
+                <img src="tools2.webp" alt="Sprayers & Biocontrol">
+            </div>
+            <div id="ff" class="text">
+                <p>Advanced sprayers and biocontrol methods ensure safe, effective pest elimination without harming crops.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 id="dd">Harvesting Tools</h2>
+            <div id="ee" class="image">
+                <img src="tools3.jpg" alt="Harvesting Machinery">
+            </div>
+            <div id="ff" class="text">
+                <p>Combine harvesters and grain thresher machines speed up the harvesting process while maintaining crop quality.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 id="dd">Soil Management Instruments</h2>
+            <div id="ee" class="image">
+                <img src="tools4.jpg" alt="Soil Testing Kits">
+            </div>
+            <div id="ff" class="text">
+                <p>Soil testing kits analyze nutrient levels and moisture, helping farmers optimize soil fertility for better crop yield.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+                           <!-- footer -->
+<footer class="foot">
+  <a href="index.html" class="footer-icon"><i class="fa-solid fa-house"></i><span id="f">Home</span></a>
+  <a href="crop_care.html" class="footer-icon"><i class="fa-solid fa-seedling"></i><span id="f">Crop Care</span></a>
+  <a href="#" class="footer-icon"><i class="fa-solid fa-store"></i><span id="f">Market View</span></a>
+  <a href="#" class="footer-icon"><i class="fa-solid fa-link"></i><span id="f">Connect</span></a>
+  <a href="#" class="footer-icon"><i class="fa-solid fa-users"></i><span id="f">Community</span></a>
+  <a href="#" class="footer-icon"><i class="fa-solid fa-user"></i><span id="f">Profile</span></a>
+  <a href="#" class="footer-icon"><i class="fa-solid fa-bell"></i><span id="f">Notification</span></a>
+</footer><br><br><br><br>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+
+</body>
+</html>

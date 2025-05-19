@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="weather.js" ></script>
+    <style>
+        body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    transition: background 0.5s ease-in-out;
+    color: white;
+}
+
+/* Weather Container Styling */
+.weather-container {
+    padding: 50px;
+}
+
+.weather-header input, button {
+    padding: 12px;
+    font-size: 18px;
+}
+
+button {
+    background: #FFD700;
+    color: black;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Weather Display Effects */
+.weather-display {
+    margin-top: 30px;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+img {
+    width: 120px;
+    height: 120px;
+}
+
+/* Background Themes */
+body.default { background: linear-gradient(to right, #4A90E2, #57B8FF); }
+body.sunny { background: linear-gradient(to right, #FFD700, #FFA500); }
+body.cloudy { background: linear-gradient(to right, #B0BEC5, #78909C); }
+body.rainy { background: linear-gradient(to right, #4A90E2, #304FFE); }
+body.snowy { background: linear-gradient(to right, #ECEFF1, #B0BEC5); }
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+    </style>
+</head>
+<body>
+
+    <div class="weather-container">
+        <div class="weather-header">
+            <h2>🌍 Live Weather Tracker</h2>
+            <input type="text" id="city" placeholder="Enter city name">
+            <button onclick="getWeather()">Check Weather</button>
+        </div>
+
+        <div class="weather-display">
+            <img id="weather-icon" src="" alt="Weather Icon">
+            <h1 id="temperature">--°C</h1>
+            <h3 id="condition">Condition: --</h3>
+            <h4 id="location">Location: --</h4>
+        </div>
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+</html>
