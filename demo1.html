@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Weather</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: white;
+            padding: 50px;
+        }
+        #weather {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Live Weather Tracker</h2>
+    <input type="text" id="city" placeholder="Enter City">
+    <button onclick="getWeather()">Get Weather</button>
+    <div id="weather"></div>
+
+    <script>
+        function getWeather() {
+            let city = document.getElementById("city").value;
+            let apiKey = "YOUR_API_KEY";
+            let url = 'https://api.openweathermap.org/data/2.5/weather?id=1275841&appid=YOUR_API_KEY&units=metric';
+
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById("weather").innerHTML = `
+                        <h3>${data.name}</h3>
+                        <p>Temperature: ${data.main.temp}°C</p>
+                        <p>Weather: ${data.weather[0].description}</p>
+                        <p>Humidity: ${data.main.humidity}%</p>
+                        <p>Wind Speed: ${data.wind.speed} m/s</p>
+                    `;
+                })
+                .catch(error => {
+                    document.getElementById("weather").innerHTML = "<p>City not found or API error.</p>";
+                    console.error("Error fetching weather:", error);
+                });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login / Register</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
+
+    .tabs button {
+      flex: 1;
+      padding: 10px;
+      background: #eee;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .tabs button.active {
+      background: #007bff;
+      color: #fff;
+    }
+
+    form {
+      display: none;
+      flex-direction: column;
+    }
+
+    form.active {
+      display: flex;
+    }
+
+    input {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button[type="submit"] {
+      background: #007bff;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="tabs">
+      <button id="loginTab" class="active" onclick="switchTab('login')">Login</button>
+      <button id="registerTab" onclick="switchTab('register')">Register</button>
+    </div>
+
+    <form id="loginForm" class="active">
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+
+    <form id="registerForm">
+      <input type="text" placeholder="Username" required />
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <input type="password" placeholder="Confirm Password" required />
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+  <script>
+    function switchTab(tab) {
+      const loginTab = document.getElementById('loginTab');
+      const registerTab = document.getElementById('registerTab');
+      const loginForm = document.getElementById('loginForm');
+      const registerForm = document.getElementById('registerForm');
+
+      if (tab === 'login') {
+        loginTab.classList.add('active');
+        registerTab.classList.remove('active');
+        loginForm.classList.add('active');
+        registerForm.classList.remove('active');
+      } else {
+        loginTab.classList.remove('active');
+        registerTab.classList.add('active');
+        loginForm.classList.remove('active');
+        registerForm.classList.add('active');
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Blossom Intro</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5dc;
+        }
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+<video id="blossomVideo" autoplay>
+    <source src="plant.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+    <script>
+        setTimeout(function() {
+            window.location.href = "https://localhost:8080"; // Replace with your actual website URL
+        }, 2000); // Redirects after 2 seconds
+    </script>
+
+</body>
+</html>

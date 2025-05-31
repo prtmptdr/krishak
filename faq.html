@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Agriculture App</title>
+
+                                  <!-- bootstrap link-->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+                                     <!--Fontawesome link-->
+
+  <script src="https://kit.fontawesome.com/ac6870aa6c.js" crossorigin="anonymous"></script>
+
+                                     <!--css link -->
+
+  <link rel="stylesheet" href="css.css">
+
+
+    <style>
+        #aa {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ea;
+            margin: 0;
+            padding: 20px;
+        }
+        #bb {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        #cc{
+            text-align: center;
+            color: #2E7D32;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .faq {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+            transition: all 0.3s ease-in-out;
+        }
+        .faq:last-child {
+            border-bottom: none;
+        }
+        .question {
+            font-weight: bold;
+            color: #333;
+            font-size: 18px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        .question:hover {
+            color: #2E7D32;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+            color: #555;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <div id="bb" class="container">
+ <h1 id="cc">Frequently Asked Questions</h1>
+        
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">1. What is Krishak?</div>
+            <div class="answer">klrishak is an advanced agriculture app that helps farmers optimize crop production, access market trends, and receive expert guidance.</div>
+        </div>
+
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">2. Who can use this app?</div>
+            <div class="answer">This app is built for farmers, agribusiness professionals, researchers, and anyone looking to improve agricultural productivity.</div>
+        </div>
+
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">3. What features does the app offer?</div>
+            <div class="answer">
+                - Smart Crop Management <br>
+                - Weather Forecasts & Alerts <br>
+                - Real-time Market Prices <br>
+                - Pest & Disease Control Advice <br>
+                - Community Support & Discussion Forums <br>
+                - Soil Testing & Analysis <br>
+                - AI-Based Yield Predictions <br>
+                - Organic Farming Guidelines <br>
+                - Smart Irrigation Insights <br>
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">4. Is the app available in multiple languages?</div>
+            <div class="answer">Yes! Krishak supports multiple languages to help farmers across different regions.</div>
+        </div>
+
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">5. Does the app require an internet connection?</div>
+            <div class="answer">Some features like market trends and weather updates require the internet, but basic functionalities work offline.</div>
+        </div>
+
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">6. What type of crops does this app support?</div>
+            <div class="answer">The app supports a variety of crops, including grains, fruits, vegetables, and cash crops.</div>
+        </div>
+
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">7. Is my personal data safe?</div>
+            <div class="answer">Yes! We prioritize security and ensure that your data is protected through encryption and privacy safeguards.</div>
+        </div>
+
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">8. Can I get real-time pest and disease alerts?</div>
+            <div class="answer">Yes, the app provides automated alerts for pest infestations and crop diseases based on your region and crop type.</div>
+        </div>
+
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">9. Does the app offer guidance on organic farming?</div>
+            <div class="answer">Absolutely! We provide expert recommendations and best practices for organic farming to boost sustainability.</div>
+        </div>
+
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">10. Can I connect with other farmers?</div>
+            <div class="answer">Yes! Our built-in farmer community lets you discuss best practices and exchange ideas with fellow agricultural experts.</div>
+        </div>
+
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">12. How do I get customer support?</div>
+            <div class="answer">You can contact our support team via email at [patidarprita600@gmail.com] or visit the Help Center within the app.</div>
+        </div>
+    </div>
+</div>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+
+    <script>
+        function toggleAnswer(element) {
+            var answer = element.nextElementSibling;
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,16 +1,17 @@
 .navbar-toggler-icon {
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out; 
 }
-
 .navbar-toggler:hover .navbar-toggler-icon {
-  transform: rotate(180deg);
+  transform: rotate(180deg); 
 }
 .fa-house-person-return{
   color: aliceblue;
 }
-
+#i{
+  height: 40px;
+}
   #b{
-  color: green;  font-size: 60px; text-shadow: 2px 1px rgb(184, 237, 105);
+  color: green;  font-size: 45px; text-shadow: 2px 1px rgb(184, 237, 105);
   }
   #c{
     height: 300px;  display: flex; flex-wrap: wrap; justify-content: center; 
@@ -96,7 +97,7 @@
   flex-direction: column;
   align-items: center;
   color: black;
-  font-size: 35px;
+  font-size: 25px;
     text-decoration: none;
     transition: transform 0.3s ease-in-out;
 }
@@ -119,7 +120,7 @@
 #g {
   color: azure;
   font-family: 'Poppins', sans-serif; /* Use a modern font */
-  font-size: 48px; /* Make it stand out */
+  font-size: 40px; /* Make it stand out */
   font-weight: bold; /* Give it a strong presence */
   color: bisque; /* Green shade for an agricultural theme */
   text-transform: uppercase; /* Keep the logo fully capitalized */
@@ -129,3 +130,49 @@
 #h{
   color: aliceblue;
 }
+
+
+     .slider-container {
+      width: 100%;
+      overflow: hidden;
+      background: lemonchiffon;
+      height: 50px;
+      position: relative;
+    }
+
+    .sliding-text {
+      display: inline-block;
+      white-space: nowrap;
+      animation: slideRight 15s linear infinite;
+      font-size: 2vw; /* Responsive font size */
+      color: #333;
+    }
+
+    .sliding-text a {
+      color: green;
+      text-decoration: none;
+      margin: 0 2vw; /* Adjust spacing based on viewport width */
+    }
+
+    .sliding-text a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes slideRight {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .slider-container {
+        height: 40px; /* Smaller height for mobile */
+      }
+
+      .sliding-text {
+        font-size: 3vw; /* Slightly larger text for readability */
+      }
+    }

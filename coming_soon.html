@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon</title>
+  <style>
+    #jj {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    #jj {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(to right, #141E30, #243B55);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+    }
+
+    #kk {
+      padding: 20px;
+      border-radius: 15px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    #ll {
+      font-size: 50px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: bold;
+    }
+
+    #mm {
+      font-size: 18px;
+      margin-bottom: 15px;
+      opacity: 0.8;
+    }
+
+  #nn {
+      border: 5px solid rgba(255, 255, 255, 0.3);
+      border-top: 5px solid #fff;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1.5s linear infinite;
+      margin: 20px auto;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: scale(0.9); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+  </style>
+</head>
+<body id="jj">
+
+  <div id="kk" class="container">
+    <h1 id="ll">Coming Soon</h1>
+    <p id="mm">Something exciting is on the way! Stay tuned for updates.</p>
+    <div id="nn" class="loader"></div>
+  </div>
+
+</body>
+</html>

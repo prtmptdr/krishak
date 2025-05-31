@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Notification</title>
+    <style>
+        .popup {
+            width: 30%;
+            height: 130px;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.popup-content {
+    text-align: center;
+   }
+
+.close-btn {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#aa {
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+
+    <div  id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <p>Please create your profile first!</p>
+            <button id="aa" onclick="redirectToProfile()">Create Profile</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("popup").style.display = "block";
+});
+
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}
+
+function redirectToProfile() {
+    window.location.href = "profile.html"; // Update with your profile page URL
+}
+    </script>
+</body>
+</html>

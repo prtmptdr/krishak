@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Agriculture App</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ea;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            text-align: center;
+            color: #2E7D32;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .contact-info {
+            text-align: center;
+            font-size: 18px;
+            color: #555;
+        }
+        .contact-form {
+            margin-top: 20px;
+        }
+        label {
+            font-size: 16px;
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        button {
+            background-color: #2E7D32;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #256b2b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        
+        <div class="contact-info">
+            <p>Email: <strong>patidarpritam600@gmail.com</strong></p>
+            <p>Phone: <strong>+91 932 987 3969</strong></p>
+            <p>Address: <strong>123 Amrai(AIMS), Bhopal, MP, India</strong></p>
+        </div>
+
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
